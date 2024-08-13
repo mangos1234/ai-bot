@@ -1,5 +1,13 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Description
+
+This is my first attempt at a chatbot using openAI!
+
+## Using my chatbot
+
+Make sure to open the console to see the chta bots response!
+
 ## Getting Started
 
 First, run the development server:
