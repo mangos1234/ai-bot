@@ -8,6 +8,9 @@ This is my first attempt at a chatbot using openAI!
 
 Make sure to open the console to see the chta bots response!
 
+<img width="1728" alt="image" src="https://github.com/user-attachments/assets/8f3569cd-34b5-40c1-9e58-b9ae91857c83">
+
+
 ## Getting Started
 
 First, run the development server:
