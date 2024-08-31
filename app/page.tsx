@@ -5,15 +5,25 @@ import { evaluate } from './actions';
 
 export default function Home() {
   const [inputState, setInputState] = useState('')
+  const [user, setUser] = useState<string>('')
+  const [response, setResponse] = useState<string>('')
+
   const handleSubmit = async (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault()
     console.log('submit')
+    setUser(inputState)
     const value = await evaluate(inputState)
+    
     console.log(value)
+    setResponse(value);
     setInputState('')
   }
   return (
-    <main className="flex min-h-screen flex-col items-center justify-between p-24">
+    <main>
+      <div className="bg-gray-50">
+        <p>user: {user}</p>
+        <p>MillieBot: {response}</p>
+      </div>
       <form onSubmit={handleSubmit}>
         <div>
           <input type="text" value={inputState} onChange={(input) => {
